@@ -1,0 +1,4219 @@
+{
+  "name": "memory_campaign_v2",
+  "jobs": [
+    {
+      "id": "IN_All_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_fast_90_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_fast_90/s42/validation.json",
+      "requires": [
+        "data/memory/in/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_fast_90_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_fast_90/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_fast_90_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_fast_90/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_fast_365_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_fast_365/s42/validation.json",
+      "requires": [
+        "data/memory/in/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_fast_365_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_fast_365/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_fast_365_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_fast_365/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_slow_365_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_slow_365/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_slow_365_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_slow_365/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_slow_365_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_slow_365/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_slow_2190_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_slow_2190/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_slow_2190_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_slow_2190/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_slow_2190_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_slow_2190/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/in/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_novelty_0p5_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/IN_All/memory_novelty_0p5/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_novelty_0p5_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/IN_All/memory_novelty_0p5/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_novelty_0p5_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/IN_All/memory_novelty_0p5/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_novelty_2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/IN_All/memory_novelty_2/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_novelty_2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/IN_All/memory_novelty_2/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_novelty_2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/IN_All/memory_novelty_2/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_C/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/in_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_C/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/in_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_C/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/in_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_C/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/in_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_C/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/in_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_C/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/in_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_C/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/in_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_C/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/in_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_C/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/in_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_F/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/in_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_F/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/in_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_F/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/in_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_F/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/in_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_F/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/in_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_F/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/in_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_F/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/in_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_F/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/in_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_F/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/in_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_B/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/in_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_B/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/in_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/IN_B/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/in_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_B/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/in_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_B/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/in_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_B/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/in_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_B/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/in_B/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_B/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/in_B/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/IN_B/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/in_B/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_fast_90_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_fast_90/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_fast_90_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_fast_90/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_fast_90_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_fast_90/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_fast_365_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_fast_365/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_fast_365_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_fast_365/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_fast_365_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_fast_365/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_slow_365_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_slow_365/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_slow_365_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_slow_365/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_slow_365_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_slow_365/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_slow_2190_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_slow_2190/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_slow_2190_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_slow_2190/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_slow_2190_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_slow_2190/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_novelty_0p5_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/CN_All/memory_novelty_0p5/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_novelty_0p5_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/CN_All/memory_novelty_0p5/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_novelty_0p5_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/CN_All/memory_novelty_0p5/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_novelty_2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/CN_All/memory_novelty_2/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_novelty_2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/CN_All/memory_novelty_2/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_novelty_2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/CN_All/memory_novelty_2/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_C/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/cn_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_C/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_C/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_C/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/cn_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_C/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_C/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_C/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/cn_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_C/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_C/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_F/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/cn_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_F/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_F/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_F/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/cn_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_F/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_F/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_F/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/cn_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_F/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_F/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_B/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/cn_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_B/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/CN_B/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_B/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/cn_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_B/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_B/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_B/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/cn_B/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_B/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/cn_B/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/CN_B/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/cn_B/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_All/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_All/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_All/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_fast_90_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_fast_90/s42/validation.json",
+      "requires": [
+        "data/memory/us/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_fast_90_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_fast_90/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_fast_90_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_fast_90",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_fast_90/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f90_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_fast_365_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_fast_365/s42/validation.json",
+      "requires": [
+        "data/memory/us/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_fast_365_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_fast_365/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_fast_365_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_fast_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_fast_365/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f365_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_slow_365_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_slow_365/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_slow_365_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_slow_365/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_slow_365_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_slow_365",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_slow_365/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s365_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_slow_2190_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_slow_2190/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_slow_2190_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_slow_2190/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_slow_2190_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_slow_2190",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_slow_2190/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s2190_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/us/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_All/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_novelty_0p5_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/US_All/memory_novelty_0p5/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_novelty_0p5_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/US_All/memory_novelty_0p5/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_novelty_0p5_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_novelty_0p5",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "results/main/US_All/memory_novelty_0p5/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n0.5/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_novelty_2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/US_All/memory_novelty_2/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_novelty_2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/US_All/memory_novelty_2/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_novelty_2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_novelty_2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "results/main/US_All/memory_novelty_2/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n2/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_C/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/us_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_C/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/us_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_C/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/us_C/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_C/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/us_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_C/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/us_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_C/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/us_C/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_C/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/us_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_C/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/us_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_C/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/us_C/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_F/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/us_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_F/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/us_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_F/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/us_F/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_F/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/us_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_F/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/us_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_F/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/us_F/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_F/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/us_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_F/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/us_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_F/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/us_F/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_no_novelty_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_B/memory_no_novelty/s42/validation.json",
+      "requires": [
+        "data/memory/us_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_no_novelty_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_B/memory_no_novelty/s2026/validation.json",
+      "requires": [
+        "data/memory/us_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_no_novelty_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_no_novelty",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "results/main/US_B/memory_no_novelty/s3407/validation.json",
+      "requires": [
+        "data/memory/us_B/f180_s1095_n0/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_single_180_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_B/memory_single_180/s42/validation.json",
+      "requires": [
+        "data/memory/us_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_single_180_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_B/memory_single_180/s2026/validation.json",
+      "requires": [
+        "data/memory/us_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_single_180_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_180",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_B/memory_single_180/s3407/validation.json",
+      "requires": [
+        "data/memory/us_B/f180_s180_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_single_1095_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "42",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_B/memory_single_1095/s42/validation.json",
+      "requires": [
+        "data/memory/us_B/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_single_1095_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_B/memory_single_1095/s2026/validation.json",
+      "requires": [
+        "data/memory/us_B/f1095_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_single_1095_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "memory_single_1095",
+        "--device",
+        "{device}",
+        "--resume",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "results/main/US_B/memory_single_1095/s3407/validation.json",
+      "requires": [
+        "data/memory/us_B/f1095_s1095_n1/manifest.json"
+      ]
+    }
+  ],
+  "selection": "validation only",
+  "description": "Single-scale variants use the same half life for both channels; parent-level readout uses subclass-memory aggregation."
+}

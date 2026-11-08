@@ -1,0 +1,3173 @@
+{
+  "name": "temporal_campaign_v2",
+  "jobs": [
+    {
+      "id": "IN_B_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TGN/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TGN_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TGN/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TGN_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TGN/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TGN_edgetype/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TGN_edgetype_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TGN_edgetype/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TGN_edgetype_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TGN_edgetype/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/EDGPAT/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_EDGPAT_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/EDGPAT/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_EDGPAT_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/EDGPAT/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TAMI/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TAMI_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TAMI/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_TAMI_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/TAMI/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    }
+  ]
+}

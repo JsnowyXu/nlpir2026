@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "patentflow-main"
+version = "0.1.0"
+description = "Anchored temporal memory for annual organization–IPC forecasting"
+requires-python = ">=3.8"
+dependencies = ["numpy==1.23.3", "scipy==1.9.3", "torch==2.2.2", "psutil==5.9.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

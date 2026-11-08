@@ -1,0 +1,287 @@
+{
+  "name": "test_priority_idgp_fast",
+  "policy": {
+    "seed": 42,
+    "priority": "test",
+    "validation_repeats": false,
+    "note": "Replay existing checkpoints; train missing cells once, then evaluate validation and test."
+  },
+  "jobs": [
+    {
+      "id": "test_IN_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/IN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/IN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/IN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/IN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/CN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/CN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/CN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/CN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/US_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/US_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/US_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/US_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    }
+  ]
+}

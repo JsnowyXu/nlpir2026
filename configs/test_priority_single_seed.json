@@ -1,0 +1,2723 @@
+{
+  "name": "test_priority_single_seed_v2",
+  "policy": {
+    "seed": 42,
+    "priority": "test",
+    "validation_repeats": false,
+    "note": "Replay existing checkpoints; train missing cells once, then evaluate validation and test."
+  },
+  "jobs": [
+    {
+      "id": "test_IN_All_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/IN_All/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_IN_B_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/IN_B/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/in_B/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_IN_F_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/IN_F/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/in_F/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_IN_C_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/IN_C/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/in_C/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_CN_All_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/CN_All/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_CN_B_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/CN_B/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/cn_B/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_CN_F_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/CN_F/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/cn_F/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_CN_C_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/CN_C/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/cn_C/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_US_All_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/US_All/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_US_B_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/US_B/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/us_B/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_US_F_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/US_F/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/us_F/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_US_C_s42",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/main/US_C/v2_default/s42/metrics.json",
+      "requires": [
+        "data/memory/us_C/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "test_IN_B_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_B_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_B_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_B_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_F_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_F_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_F_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_F_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_C_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_C_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_C_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_C_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_All_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_All_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_All_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_All_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_B_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_B_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_B_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_B_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_F_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_F_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_F_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_F_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_C_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_C_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_C_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_C_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_All_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_All_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_All_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_All_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_B_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_B_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_B_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_B_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_F_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_F_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_F_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_F_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_C_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_C_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_C_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_C_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_All_TGN_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGN",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/TGN/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_All_TGN_edgetype_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGN_edgetype",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/TGN_edgetype/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_All_EDGPAT_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "EDGPAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/EDGPAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_All_TAMI_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TAMI",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/TAMI/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_B_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_IN_F_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_IN_C_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_IN_All_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_CN_B_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_CN_F_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_CN_C_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_CN_All_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_US_B_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_US_F_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_US_C_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_US_All_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/MENCP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "test_IN_C_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_IN_F_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_IN_B_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_IN_All_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_CN_C_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_CN_F_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_CN_B_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_CN_All_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_US_C_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_US_F_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_US_B_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_US_All_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_IN_C_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_IN_F_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_IN_B_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_IN_All_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_CN_C_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_CN_F_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_CN_B_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_CN_All_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_US_C_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_US_F_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_US_B_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_US_All_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_IN_C_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_IN_F_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_IN_B_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_IN_All_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_CN_C_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_CN_F_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_CN_B_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_CN_All_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_US_C_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_US_F_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_US_B_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_US_All_DyGFormer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "DyGFormer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/DyGFormer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 2400
+    },
+    {
+      "id": "test_IN_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/IN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/IN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/IN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_IN_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/IN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/CN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/CN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/CN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_CN_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/CN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/US_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/US_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/US_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "test_US_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/IDGP/v2_default/s42/metrics.json",
+      "requires": [
+        "data/idgp/US_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    }
+  ]
+}

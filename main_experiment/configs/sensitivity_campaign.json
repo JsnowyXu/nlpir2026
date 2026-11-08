@@ -1,0 +1,4330 @@
+{
+  "name": "sensitivity_campaign_v2",
+  "jobs": [
+    {
+      "id": "IN_All_sensitivity_lr_0p0003_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/IN_All/sensitivity_lr_0p0003/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "IN_All_sensitivity_lr_0p0003_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/IN_All/sensitivity_lr_0p0003/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "IN_All_sensitivity_lr_0p0003_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/IN_All/sensitivity_lr_0p0003/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "IN_All_sensitivity_lr_0p003_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/IN_All/sensitivity_lr_0p003/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "IN_All_sensitivity_lr_0p003_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/IN_All/sensitivity_lr_0p003/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "IN_All_sensitivity_lr_0p003_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/IN_All/sensitivity_lr_0p003/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "IN_All_sensitivity_dropout_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_dropout_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_dropout_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_dropout_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_dropout_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_dropout_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_dropout_0p3_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/IN_All/sensitivity_dropout_0p3/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "IN_All_sensitivity_dropout_0p3_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/IN_All/sensitivity_dropout_0p3/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "IN_All_sensitivity_dropout_0p3_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/IN_All/sensitivity_dropout_0p3/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "IN_All_sensitivity_dim_64_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/IN_All/sensitivity_dim_64/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "IN_All_sensitivity_dim_64_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/IN_All/sensitivity_dim_64/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "IN_All_sensitivity_dim_64_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/IN_All/sensitivity_dim_64/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "IN_All_sensitivity_dim_128_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/IN_All/sensitivity_dim_128/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "IN_All_sensitivity_dim_128_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/IN_All/sensitivity_dim_128/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "IN_All_sensitivity_dim_128_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/IN_All/sensitivity_dim_128/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "IN_All_sensitivity_communities_8_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/IN_All/sensitivity_communities_8/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "IN_All_sensitivity_communities_8_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/IN_All/sensitivity_communities_8/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "IN_All_sensitivity_communities_8_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/IN_All/sensitivity_communities_8/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "IN_All_sensitivity_communities_64_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/IN_All/sensitivity_communities_64/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "IN_All_sensitivity_communities_64_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/IN_All/sensitivity_communities_64/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "IN_All_sensitivity_communities_64_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/IN_All/sensitivity_communities_64/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "IN_All_sensitivity_temperature_0p2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/IN_All/sensitivity_temperature_0p2/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "IN_All_sensitivity_temperature_0p2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/IN_All/sensitivity_temperature_0p2/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "IN_All_sensitivity_temperature_0p2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/IN_All/sensitivity_temperature_0p2/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "IN_All_sensitivity_temperature_1p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_temperature_1p0/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "IN_All_sensitivity_temperature_1p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_temperature_1p0/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "IN_All_sensitivity_temperature_1p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_temperature_1p0/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_0p2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_0p2/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_0p2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_0p2/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_0p2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_0p2/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_1p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_1p0/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_1p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_1p0/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "IN_All_sensitivity_rank_loss_1p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_rank_loss_1p0/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p03_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p03/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p03_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p03/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p03_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p03/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p3_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p3/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p3_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p3/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "IN_All_sensitivity_alignment_0p3_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/IN_All/sensitivity_alignment_0p3/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "IN_All_sensitivity_weight_decay_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_weight_decay_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_weight_decay_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_weight_decay_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_weight_decay_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/IN_All/sensitivity_weight_decay_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "IN_All_sensitivity_weight_decay_0p001_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/IN_All/sensitivity_weight_decay_0p001/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "IN_All_sensitivity_weight_decay_0p001_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/IN_All/sensitivity_weight_decay_0p001/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "IN_All_sensitivity_weight_decay_0p001_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/IN_All/sensitivity_weight_decay_0p001/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "IN_All_sensitivity_max_queries_per_year_5000_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/IN_All/sensitivity_max_queries_per_year_5000/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "IN_All_sensitivity_max_queries_per_year_5000_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/IN_All/sensitivity_max_queries_per_year_5000/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "IN_All_sensitivity_max_queries_per_year_5000_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/IN_All/sensitivity_max_queries_per_year_5000/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "IN_All_sensitivity_max_queries_per_year_50000_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/IN_All/sensitivity_max_queries_per_year_50000/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    },
+    {
+      "id": "IN_All_sensitivity_max_queries_per_year_50000_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/IN_All/sensitivity_max_queries_per_year_50000/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    },
+    {
+      "id": "IN_All_sensitivity_max_queries_per_year_50000_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/IN_All/sensitivity_max_queries_per_year_50000/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    },
+    {
+      "id": "CN_All_sensitivity_lr_0p0003_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/CN_All/sensitivity_lr_0p0003/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "CN_All_sensitivity_lr_0p0003_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/CN_All/sensitivity_lr_0p0003/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "CN_All_sensitivity_lr_0p0003_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/CN_All/sensitivity_lr_0p0003/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "CN_All_sensitivity_lr_0p003_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/CN_All/sensitivity_lr_0p003/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "CN_All_sensitivity_lr_0p003_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/CN_All/sensitivity_lr_0p003/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "CN_All_sensitivity_lr_0p003_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/CN_All/sensitivity_lr_0p003/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "CN_All_sensitivity_dropout_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_dropout_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_dropout_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_dropout_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_dropout_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_dropout_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_dropout_0p3_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/CN_All/sensitivity_dropout_0p3/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "CN_All_sensitivity_dropout_0p3_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/CN_All/sensitivity_dropout_0p3/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "CN_All_sensitivity_dropout_0p3_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/CN_All/sensitivity_dropout_0p3/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "CN_All_sensitivity_dim_64_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/CN_All/sensitivity_dim_64/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "CN_All_sensitivity_dim_64_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/CN_All/sensitivity_dim_64/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "CN_All_sensitivity_dim_64_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/CN_All/sensitivity_dim_64/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "CN_All_sensitivity_dim_128_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/CN_All/sensitivity_dim_128/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "CN_All_sensitivity_dim_128_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/CN_All/sensitivity_dim_128/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "CN_All_sensitivity_dim_128_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/CN_All/sensitivity_dim_128/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "CN_All_sensitivity_communities_8_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/CN_All/sensitivity_communities_8/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "CN_All_sensitivity_communities_8_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/CN_All/sensitivity_communities_8/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "CN_All_sensitivity_communities_8_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/CN_All/sensitivity_communities_8/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "CN_All_sensitivity_communities_64_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/CN_All/sensitivity_communities_64/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "CN_All_sensitivity_communities_64_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/CN_All/sensitivity_communities_64/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "CN_All_sensitivity_communities_64_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/CN_All/sensitivity_communities_64/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "CN_All_sensitivity_temperature_0p2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/CN_All/sensitivity_temperature_0p2/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "CN_All_sensitivity_temperature_0p2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/CN_All/sensitivity_temperature_0p2/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "CN_All_sensitivity_temperature_0p2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/CN_All/sensitivity_temperature_0p2/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "CN_All_sensitivity_temperature_1p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_temperature_1p0/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "CN_All_sensitivity_temperature_1p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_temperature_1p0/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "CN_All_sensitivity_temperature_1p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_temperature_1p0/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_0p2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_0p2/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_0p2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_0p2/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_0p2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_0p2/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_1p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_1p0/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_1p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_1p0/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "CN_All_sensitivity_rank_loss_1p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_rank_loss_1p0/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p03_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p03/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p03_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p03/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p03_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p03/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p3_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p3/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p3_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p3/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "CN_All_sensitivity_alignment_0p3_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/CN_All/sensitivity_alignment_0p3/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "CN_All_sensitivity_weight_decay_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_weight_decay_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_weight_decay_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_weight_decay_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_weight_decay_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/CN_All/sensitivity_weight_decay_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "CN_All_sensitivity_weight_decay_0p001_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/CN_All/sensitivity_weight_decay_0p001/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "CN_All_sensitivity_weight_decay_0p001_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/CN_All/sensitivity_weight_decay_0p001/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "CN_All_sensitivity_weight_decay_0p001_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/CN_All/sensitivity_weight_decay_0p001/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "CN_All_sensitivity_max_queries_per_year_5000_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/CN_All/sensitivity_max_queries_per_year_5000/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "CN_All_sensitivity_max_queries_per_year_5000_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/CN_All/sensitivity_max_queries_per_year_5000/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "CN_All_sensitivity_max_queries_per_year_5000_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/CN_All/sensitivity_max_queries_per_year_5000/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "CN_All_sensitivity_max_queries_per_year_50000_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/CN_All/sensitivity_max_queries_per_year_50000/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    },
+    {
+      "id": "CN_All_sensitivity_max_queries_per_year_50000_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/CN_All/sensitivity_max_queries_per_year_50000/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    },
+    {
+      "id": "CN_All_sensitivity_max_queries_per_year_50000_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/CN_All/sensitivity_max_queries_per_year_50000/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    },
+    {
+      "id": "US_All_sensitivity_lr_0p0003_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/US_All/sensitivity_lr_0p0003/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "US_All_sensitivity_lr_0p0003_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/US_All/sensitivity_lr_0p0003/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "US_All_sensitivity_lr_0p0003_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_lr_0p0003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.0003"
+      ],
+      "output": "results/main/US_All/sensitivity_lr_0p0003/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.0003
+    },
+    {
+      "id": "US_All_sensitivity_lr_0p003_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/US_All/sensitivity_lr_0p003/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "US_All_sensitivity_lr_0p003_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/US_All/sensitivity_lr_0p003/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "US_All_sensitivity_lr_0p003_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_lr_0p003",
+        "--device",
+        "{device}",
+        "--resume",
+        "--lr",
+        "0.003"
+      ],
+      "output": "results/main/US_All/sensitivity_lr_0p003/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "lr",
+      "sensitivity_value": 0.003
+    },
+    {
+      "id": "US_All_sensitivity_dropout_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_dropout_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_dropout_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_dropout_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_dropout_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dropout_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_dropout_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_dropout_0p3_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/US_All/sensitivity_dropout_0p3/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "US_All_sensitivity_dropout_0p3_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/US_All/sensitivity_dropout_0p3/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "US_All_sensitivity_dropout_0p3_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dropout_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dropout",
+        "0.3"
+      ],
+      "output": "results/main/US_All/sensitivity_dropout_0p3/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dropout",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "US_All_sensitivity_dim_64_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/US_All/sensitivity_dim_64/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "US_All_sensitivity_dim_64_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/US_All/sensitivity_dim_64/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "US_All_sensitivity_dim_64_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dim_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "64"
+      ],
+      "output": "results/main/US_All/sensitivity_dim_64/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "US_All_sensitivity_dim_128_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/US_All/sensitivity_dim_128/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "US_All_sensitivity_dim_128_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/US_All/sensitivity_dim_128/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "US_All_sensitivity_dim_128_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_dim_128",
+        "--device",
+        "{device}",
+        "--resume",
+        "--dim",
+        "128"
+      ],
+      "output": "results/main/US_All/sensitivity_dim_128/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "dim",
+      "sensitivity_value": 128
+    },
+    {
+      "id": "US_All_sensitivity_communities_8_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/US_All/sensitivity_communities_8/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "US_All_sensitivity_communities_8_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/US_All/sensitivity_communities_8/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "US_All_sensitivity_communities_8_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_communities_8",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "8"
+      ],
+      "output": "results/main/US_All/sensitivity_communities_8/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 8
+    },
+    {
+      "id": "US_All_sensitivity_communities_64_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/US_All/sensitivity_communities_64/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "US_All_sensitivity_communities_64_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/US_All/sensitivity_communities_64/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "US_All_sensitivity_communities_64_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_communities_64",
+        "--device",
+        "{device}",
+        "--resume",
+        "--communities",
+        "64"
+      ],
+      "output": "results/main/US_All/sensitivity_communities_64/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "communities",
+      "sensitivity_value": 64
+    },
+    {
+      "id": "US_All_sensitivity_temperature_0p2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/US_All/sensitivity_temperature_0p2/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "US_All_sensitivity_temperature_0p2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/US_All/sensitivity_temperature_0p2/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "US_All_sensitivity_temperature_0p2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_temperature_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "0.2"
+      ],
+      "output": "results/main/US_All/sensitivity_temperature_0p2/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "US_All_sensitivity_temperature_1p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/US_All/sensitivity_temperature_1p0/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "US_All_sensitivity_temperature_1p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/US_All/sensitivity_temperature_1p0/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "US_All_sensitivity_temperature_1p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_temperature_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--temperature",
+        "1.0"
+      ],
+      "output": "results/main/US_All/sensitivity_temperature_1p0/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "temperature",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_0p2_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_0p2/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_0p2_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_0p2/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_0p2_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_0p2",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "0.2"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_0p2/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 0.2
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_1p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_1p0/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_1p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_1p0/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "US_All_sensitivity_rank_loss_1p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_rank_loss_1p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--rank-loss",
+        "1.0"
+      ],
+      "output": "results/main/US_All/sensitivity_rank_loss_1p0/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "rank-loss",
+      "sensitivity_value": 1.0
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p03_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p03/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p03_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p03/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p03_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p03",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.03"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p03/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.03
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p3_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p3/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p3_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p3/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "US_All_sensitivity_alignment_0p3_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_alignment_0p3",
+        "--device",
+        "{device}",
+        "--resume",
+        "--alignment",
+        "0.3"
+      ],
+      "output": "results/main/US_All/sensitivity_alignment_0p3/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "alignment",
+      "sensitivity_value": 0.3
+    },
+    {
+      "id": "US_All_sensitivity_weight_decay_0p0_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_weight_decay_0p0/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_weight_decay_0p0_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_weight_decay_0p0/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_weight_decay_0p0_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_weight_decay_0p0",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.0"
+      ],
+      "output": "results/main/US_All/sensitivity_weight_decay_0p0/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.0
+    },
+    {
+      "id": "US_All_sensitivity_weight_decay_0p001_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/US_All/sensitivity_weight_decay_0p001/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "US_All_sensitivity_weight_decay_0p001_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/US_All/sensitivity_weight_decay_0p001/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "US_All_sensitivity_weight_decay_0p001_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_weight_decay_0p001",
+        "--device",
+        "{device}",
+        "--resume",
+        "--weight-decay",
+        "0.001"
+      ],
+      "output": "results/main/US_All/sensitivity_weight_decay_0p001/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "weight-decay",
+      "sensitivity_value": 0.001
+    },
+    {
+      "id": "US_All_sensitivity_max_queries_per_year_5000_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/US_All/sensitivity_max_queries_per_year_5000/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "US_All_sensitivity_max_queries_per_year_5000_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/US_All/sensitivity_max_queries_per_year_5000/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "US_All_sensitivity_max_queries_per_year_5000_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_max_queries_per_year_5000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "5000"
+      ],
+      "output": "results/main/US_All/sensitivity_max_queries_per_year_5000/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 5000
+    },
+    {
+      "id": "US_All_sensitivity_max_queries_per_year_50000_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/US_All/sensitivity_max_queries_per_year_50000/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    },
+    {
+      "id": "US_All_sensitivity_max_queries_per_year_50000_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/US_All/sensitivity_max_queries_per_year_50000/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    },
+    {
+      "id": "US_All_sensitivity_max_queries_per_year_50000_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "sensitivity_max_queries_per_year_50000",
+        "--device",
+        "{device}",
+        "--resume",
+        "--max-queries-per-year",
+        "50000"
+      ],
+      "output": "results/main/US_All/sensitivity_max_queries_per_year_50000/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ],
+      "sensitivity_parameter": "max-queries-per-year",
+      "sensitivity_value": 50000
+    }
+  ],
+  "selection": "validation only; one-factor-at-a-time; baseline from ablation_full",
+  "not_yet_in_this_plan": [
+    "memory half lives and novelty require additional cache builds"
+  ],
+  "canonical_main_entrypoint": "main_experiment/train.py"
+}

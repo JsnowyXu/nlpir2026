@@ -1,0 +1,287 @@
+{
+  "name": "test_priority_sampling_fast_a",
+  "policy": {
+    "seed": 42,
+    "priority": "test",
+    "validation_repeats": false,
+    "note": "Replay existing checkpoints; train missing cells once, then evaluate validation and test."
+  },
+  "jobs": [
+    {
+      "id": "test_IN_C_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_C/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_IN_F_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_F/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_IN_B_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_B/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_IN_All_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/IN_All/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_CN_C_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_CN_F_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_CN_B_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_CN_All_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_US_C_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_C/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_US_F_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_F/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_US_B_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_B/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    },
+    {
+      "id": "test_US_All_TGAT_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "TGAT",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/US_All/TGAT/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ],
+      "minimum_free_mb": 1800
+    }
+  ]
+}

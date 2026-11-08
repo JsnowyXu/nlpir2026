@@ -1,0 +1,242 @@
+# -*- coding:utf-8 -*-
+import json
+import sys
+import os
+from pathlib import Path
+
+from torch.nn.utils.rnn import pad_sequence
+
+from models.dhpt import DHPT
+
+cur_path = os.path.abspath(os.path.dirname(__file__))
+root_path = os.path.split(cur_path)[0]
+path_project = os.path.split(root_path)[0]
+sys.path.append(root_path)
+sys.path.append(path_project)
+sys.path.append('/')
+
+import time
+import datetime
+import logging
+import torch
+import numpy as np
+import pickle
+from tqdm import tqdm
+
+import gc
+
+from utils.data_helpers import load_adjacent
+gc.collect()
+
+from evals.evaluation import evaluation
+from utils.metric import get_metric
+from utils.util import EarlyStopMonitor, set_random_seed, save_results
+from modules.history_memory import HistoryMemory
+
+sys.path.append('/')
+
+from utils import data_helpers as dh
+from utils import param_cn as parser
+from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_score, average_precision_score
+args = parser.parameter_parser()
+
+
+Path(cur_path + f"/saved_checkpoints/{args.US}").mkdir(parents=True, exist_ok=True)
+Path(cur_path + f"/results/{args.US}/").mkdir(parents=True, exist_ok=True)
+Path(cur_path + f"/logs/{args.US}/").mkdir(parents=True, exist_ok=True)
+Path(cur_path + f"/memories/{args.US}/").mkdir(parents=True, exist_ok=True)
+Path(cur_path + f"/modellog/{args.US}/").mkdir(parents=True, exist_ok=True)
+
+model_type = 'word' + str(args.level)
+if args.use_bert:
+    model_type = 'bert'+ str(args.level)
+if args.use_cnn:
+    model_type += '_cnn'
+if args.use_company:
+    model_type += '_company'+str(args.weight)
+if args.use_hierarchy:
+    model_type += '_hier'
+if args.use_memory:
+    model_type += '_memory'
+    if args.use_his_memory:
+        model_type += '_his'
+    if args.use_time:
+        model_type += "_time"
+if args.use_his_memory:
+    Path(cur_path + f"/IPC/{args.US}/{model_type}/").mkdir(parents=True, exist_ok=True)
+
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+fh = logging.FileHandler(cur_path +'/logs/{}/{}-{}.log'.format(args.US,model_type, str(time.time())))
+
+fh.setLevel(logging.DEBUG)
+ch = logging.StreamHandler()
+ch.setLevel(logging.WARN)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+fh.setFormatter(formatter)
+ch.setFormatter(formatter)
+logger.addHandler(fh)
+logger.addHandler(ch)
+logger.info(args)
+
+get_checkpoint_path = lambda \
+        epoch:cur_path + f'/saved_checkpoints/{args.US}/{model_type}-{epoch}.pth'
+
+set_random_seed(2024)
+
+if __name__ == '__main__':
+    startTime = datetime.datetime.now()
+    logger.info("startTime:{}".format(startTime))
+    start_epoch = time.time()
+    
+    dh.tab_printer(args, logger)
+    early_stopper = EarlyStopMonitor(max_round=args.patience)
+    
+    # Load word2vec model from train
+    word2idx, embedding_matrix = dh.load_word2vec_matrix(args.word2vec_file.format(args.US))
+  
+    # Load sentences, labels, and training parameters
+    GPU = args.gpu
+    device_string = 'cuda:{}'.format(GPU) if torch.cuda.is_available() else 'cpu'
+    device = torch.device(device_string)
+
+    # 层级关系矩阵，8*124，124*609； total_number:各层级数量列表[8,124,609]
+    hierarchy_data, total_number = dh.load_hierarchy_tree(args.hierarchy_tree, args.US, args.hierarchy_names)
+    logger.info("classification codes in hierarchical tree is:{}".format(total_number))
+      
+    raw_node_features = np.load(args.raw_node_features.format(args.US)) 
+    # load train,valid,test datasets
+   
+    # train_data, company_map, companies, patent_map, patents, company_dt = \
+    #     dh.load_data_and_labels(args, args.train_file.format(args.US, args.US), word2idx,level= args.level)
+    # print("end construct train data")
+    # pklTrainDic={}
+    # pklTrainDic['train_data'] = train_data
+    # pklTrainDic['company_map'] = company_map
+    # pklTrainDic['companies'] = companies
+    # pklTrainDic['patent_map'] = patent_map
+    # pklTrainDic['patents'] = patents
+    # pklTrainDic['company_dt'] = company_dt
+
+    # with open(cur_path +'/train'+str(args.level) + args.US + str(args.max_len_bert)+'.pkl', 'wb') as file:
+    #     pickle.dump(pklTrainDic, file)
+
+    with open(cur_path +'/train'+str(args.level) + args.US + str(args.max_len_bert)+'.pkl', 'rb') as file:
+        # 加载数据到变量中
+        train = pickle.load(file) 
+        train_data = train['train_data']
+        company_map= train['company_map']
+        companies= train['companies']
+        patent_map= train['patent_map']
+        patents= train['patents']
+        company_dt= train['company_dt']
+    print("end construct train data: " + str(patents))
+
+    # val_data, company_map, companies, patent_map, patents, company_dt = \
+    #     dh.load_data_and_labels(args, args.validation_file.format(args.US, args.US), word2idx,level= args.level,
+    #                             company_maps=company_map, company_ids=companies,
+    #                             patent_maps=patent_map, patent_ids=patents, company_dts=company_dt, type='val')
+    # pklValDic={}
+    # pklValDic['val_data'] = val_data
+    # pklValDic['company_map'] = company_map
+    # pklValDic['companies'] = companies
+    # pklValDic['patent_map'] = patent_map
+    # pklValDic['patents'] = patents
+    # pklValDic['company_dt'] = company_dt
+
+    # with open(cur_path + '/val'+str(args.level) + args.US  + str(args.max_len_bert)+'.pkl', 'wb') as file:
+    #     pickle.dump(pklValDic, file)
+    
+    with open(cur_path +'/val'+str(args.level) + args.US + str(args.max_len_bert)+'.pkl', 'rb') as file:
+        # 加载数据到变量中
+        val = pickle.load(file) 
+        val_data = val['val_data']
+        company_map= val['company_map']
+        companies= val['companies']
+        patent_map= val['patent_map']
+        patents= val['patents']
+        company_dt= val['company_dt']
+    print("end construct val data: " + str(len(val_data["patentId"])))
+
+    # test_data, company_map, companies, patent_map, patents, company_dt = \
+    #     dh.load_data_and_labels(args, args.test_file.format(args.US, args.US), word2idx,level= args.level,
+    #                             company_maps=company_map, company_ids=companies,
+    #                             patent_maps=patent_map, patent_ids=patents, company_dts=company_dt, type='test')
+    # pklTestDic={}
+    # pklTestDic['test_data'] = test_data
+    # pklTestDic['company_map'] = company_map
+    # pklTestDic['companies'] = companies
+    # pklTestDic['patent_map'] = patent_map
+    # pklTestDic['patents'] = patents
+    # pklTestDic['company_dt'] = company_dt
+
+    # with open(cur_path + '/test'+str(args.level) + args.US  + str(args.max_len_bert)+'.pkl', 'wb') as file:
+    #     pickle.dump(pklTestDic, file)
+    
+    # with open(cur_path +'/test'+str(args.level) + args.US + str(args.max_len_bert) +'.pkl', 'rb') as file:
+    #     # 加载数据到变量中
+    #     test = pickle.load(file) 
+    #     test_data = test['test_data']
+    #     company_map= test['company_map']
+    #     companies= test['companies']
+    #     patent_map= test['patent_map']
+    #     patents= test['patents']
+    #     company_dt= test['company_dt']
+    
+    # print("end construct test data: " + str(len(test_data["patentId"])))
+
+    batches_train = dh.batch_iter(train_data, company_dt, total_number, args.batch_size,args.max_len_neighbors,args.max_len_bert,args.level, type='train', shuffle=False)
+    batches_val = dh.batch_iter(val_data, company_dt, total_number, args.batch_size,args.max_len_neighbors,args.max_len_bert,args.level, type='val', shuffle=False)
+    # batches_test = dh.batch_iter(test_data, company_dt, total_number, args.batch_size,args.max_len_neighbors,args.max_len_bert,args.level, type='test', shuffle=False)
+    
+    
+    # Init DHPT model
+    dhpt = DHPT(model_name=args.bert_base.format(args.bert_lang),
+                bert_emb_size=args.bert_embedding_dim, 
+                word_emb_size=args.wordembedding_dim, 
+                lstm_hidden_size=args.lstm_dim,
+                layers_num=1, 
+                layer_class_nums=total_number,  
+                hierarchy_tree=hierarchy_data, 
+                com_model_way=args.model_way,
+                com_feat_type=args.com_feat_type,
+                use_hierarchy=args.use_hierarchy,
+                use_vertical=args.use_vertical,
+                word2vec_emb_init=embedding_matrix,
+                use_company=args.use_company,
+                use_history= args.use_his_memory,
+                use_memory=args.use_memory, 
+                use_time=args.use_time,
+                use_cnn = args.use_cnn,
+                use_bert = args.use_bert,num_filters= args.num_filters, filter_sizes= args.filter_sizes,
+                memory_update_at_start=not args.memory_update_at_end,
+                use_lstm_text=args.use_lstm_text,
+                message_aggregator_type=args.message_agg,
+                n_nodes=sum(total_number), 
+                node_emb_type=args.node_embedding_module,
+                message_dim=args.message_dim, 
+                message_function=args.message_function, 
+                memory_dim=args.memory_dim,
+                memory_updater_type=args.memory_updater,
+                raw_node_features=raw_node_features,
+                max_len_neighbors=args.max_len_neighbors,
+                labels_num=total_number[args.level - 1],
+                level = args.level,
+                weight = args.weight,
+                dropout=args.dropout_rate,
+                device=device ).to(device)
+    
+    # criterion = torch.nn.BCELoss()
+    # optimizer = torch.optim.Adam(dhpt.parameters(), lr=args.learning_rate)
+
+    # Generate batches
+    keys = ['group']
+    
+    best_model_path = get_checkpoint_path(23)
+    dhpt.load_state_dict(torch.load(best_model_path))
+    logger.info(f'Loaded the best model at epoch {early_stopper.best_epoch} for inference')
+    print("===================================test===================================")
+    test_scores, testloss = evaluation(dhpt, batches_val, logger, device, string='test')
+    # save_results(cur_path + '/results/'+args.US+'/'+model_type+'test.json', test_scores)

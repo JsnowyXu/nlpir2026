@@ -1,0 +1,1141 @@
+{
+  "name": "memory_build_campaign_v2",
+  "jobs": [
+    {
+      "id": "IN_All_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/in/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_fast_90",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in/f90_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_fast_365",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in/f365_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_slow_365",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in/f180_s365_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_slow_2190",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in/f180_s2190_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_novelty_0p5",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "data/memory/in/f180_s1095_n0.5/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_memory_novelty_2",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "data/memory/in/f180_s1095_n2/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "C",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/in_C/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "C",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in_C/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_C_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "C",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in_C/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "F",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/in_F/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "F",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in_F/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_F_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "F",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in_F/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "B",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/in_B/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "B",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in_B/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_B_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "in",
+        "--section",
+        "B",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/in_B/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/in/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/cn/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_fast_90",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn/f90_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_fast_365",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn/f365_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_slow_365",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn/f180_s365_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_slow_2190",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn/f180_s2190_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_novelty_0p5",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "data/memory/cn/f180_s1095_n0.5/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_memory_novelty_2",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "data/memory/cn/f180_s1095_n2/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "C",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/cn_C/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "C",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn_C/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_C_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "C",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn_C/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "F",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/cn_F/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "F",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn_F/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_F_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "F",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn_F/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "B",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/cn_B/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "B",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn_B/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_B_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "cn",
+        "--section",
+        "B",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/cn_B/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/cn/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/us/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_fast_90",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "90",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us/f90_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_fast_365",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "365",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us/f365_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_slow_365",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "365",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us/f180_s365_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_slow_2190",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "2190",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us/f180_s2190_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_novelty_0p5",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.5"
+      ],
+      "output": "data/memory/us/f180_s1095_n0.5/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_memory_novelty_2",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "All",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "2.0"
+      ],
+      "output": "data/memory/us/f180_s1095_n2/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "C",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/us_C/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "C",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us_C/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_C_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "C",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us_C/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "F",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/us_F/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "F",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us_F/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_F_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "F",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us_F/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_no_novelty",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "B",
+        "--fast",
+        "180",
+        "--slow",
+        "1095",
+        "--novelty",
+        "0.0"
+      ],
+      "output": "data/memory/us_B/f180_s1095_n0/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_single_180",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "B",
+        "--fast",
+        "180",
+        "--slow",
+        "180",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us_B/f180_s180_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    },
+    {
+      "id": "US_B_memory_single_1095",
+      "device": "cpu",
+      "argv": [
+        "scripts/build_memory.py",
+        "--languages",
+        "us",
+        "--section",
+        "B",
+        "--fast",
+        "1095",
+        "--slow",
+        "1095",
+        "--novelty",
+        "1.0"
+      ],
+      "output": "data/memory/us_B/f1095_s1095_n1/manifest.json",
+      "requires": [
+        "data/text/us/manifest.json"
+      ]
+    }
+  ],
+  "selection": "validation only",
+  "description": "Single-scale variants use the same half life for both channels; parent-level readout uses subclass-memory aggregation."
+}

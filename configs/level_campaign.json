@@ -1,0 +1,403 @@
+{
+  "name": "level_campaign_v2",
+  "jobs": [
+    {
+      "id": "IN_All_level1_default_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/IN_All/level1_default/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_level1_default_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/IN_All/level1_default/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_level1_default_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/IN_All/level1_default/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_level2_default_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/IN_All/level2_default/s42/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_level2_default_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/IN_All/level2_default/s2026/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "IN_All_level2_default_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/IN_All/level2_default/s3407/validation.json",
+      "requires": [
+        "data/memory/in/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_level1_default_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/CN_All/level1_default/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_level1_default_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/CN_All/level1_default/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_level1_default_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/CN_All/level1_default/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_level2_default_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/CN_All/level2_default/s42/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_level2_default_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/CN_All/level2_default/s2026/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "CN_All_level2_default_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/CN_All/level2_default/s3407/validation.json",
+      "requires": [
+        "data/memory/cn/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_level1_default_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/US_All/level1_default/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_level1_default_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/US_All/level1_default/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_level1_default_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "level1_default",
+        "--level",
+        "1",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/US_All/level1_default/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_level2_default_s42",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/US_All/level2_default/s42/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_level2_default_s2026",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/US_All/level2_default/s2026/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ]
+    },
+    {
+      "id": "US_All_level2_default_s3407",
+      "device": "cpu",
+      "argv": [
+        "main_experiment/train.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "level2_default",
+        "--level",
+        "2",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/main/US_All/level2_default/s3407/validation.json",
+      "requires": [
+        "data/memory/us/f180_s1095_n1/manifest.json"
+      ]
+    }
+  ],
+  "selection": "validation only",
+  "description": "Single-scale variants use the same half life for both channels; parent-level readout uses subclass-memory aggregation."
+}

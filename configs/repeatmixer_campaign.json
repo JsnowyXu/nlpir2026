@@ -1,0 +1,834 @@
+{
+  "name": "repeatmixer_campaign_v2",
+  "jobs": [
+    {
+      "id": "IN_C_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_C_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_C_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_F_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_F_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_F_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_B_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_B_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_B_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_All_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_All_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "IN_All_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/in/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_C_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_C_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_C_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_F_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_F_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_F_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_B_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_B_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_B_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_All_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_All_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "CN_All_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_C_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_C_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_C_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_F_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_F_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_F_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_B_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_B_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_B_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_All_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/RepeatMixer/v2_default/s42/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_All_RepeatMixer_s2026",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/RepeatMixer/v2_default/s2026/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "US_All_RepeatMixer_s3407",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/RepeatMixer/v2_default/s3407/validation.json",
+      "requires": [
+        "data/text/us/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    }
+  ],
+  "priority": "smaller section catalogs before All; waits for full-catalog cached pilot"
+}

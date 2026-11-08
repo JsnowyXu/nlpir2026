@@ -1,0 +1,270 @@
+{
+"CN-filter": {
+    "raw_path": "./data/raw-data/CN-all.csv",
+    "filter_code_path": "./data/New-Data/cn-code-all.csv",
+    "comany_patent_path": "./data/New-Data/cn_com_all.csv",
+    "company_top_path": "./data/New-Data/top30/cntpo-30.csv",
+    "key_COM":[
+      "orgname",
+      "publicationDate",
+      "patentId",
+      "classCode"
+    ],
+    "KNN-path": "./data/CN-filter/tmp.csv",
+    "hier_path": "./data/CN-filter/tmp_hieray.csv",
+    "reIndex_path": "./data/CN-filter/tmp-reIndex.csv",
+    "concate_path": "./data/CN-filter/tmp-concate.csv",
+    "final_path": "./data/CN-filter/all.csv",
+
+    "match_label": [
+      "codeIV",
+      "codeIII",
+      "codeII",
+      "codeI"
+    ],
+    "match_rule": [
+      "[a-hA-H]\\d+[a-zA-Z]-?\\d+",
+      "[a-hA-H]\\d+[a-zA-Z]",
+      "[a-hA-H]\\d+",
+      "[a-hA-H]"
+    ],
+
+    "reid_raw_col": [
+      "orgname",
+      "classCode",
+      "codeIV",
+      "codeIII",
+      "codeII",
+      "codeI"
+    ],
+    "reid_new_col": [
+      "orgID",
+      "codeId",
+      "codeIVId",
+      "codeIIIId",
+      "codeIIId",
+      "codeIId"
+    ],
+    "reid_path": [
+      "./data/CN-filter/reInd/com-reInd.csv",
+      "./data/CN-filter/reInd/cls-reInd.csv",
+      "./data/CN-filter/reInd/clsIV-reInd.csv",
+      "./data/CN-filter/reInd/clsIII-reInd.csv",
+      "./data/CN-filter/reInd/clsII-reInd.csv",
+      "./data/CN-filter/reInd/clsI-reInd.csv"
+    ],
+    "map_out": [
+      "orgID",
+      "group",
+      "class",
+      "subsection",
+      "section"
+    ],
+    "label_3_path":"./data/CN-filter/map/clsIII.csv",
+    "multi_label_train_path":"./data/CN-filter/MultiLabel/classIII_train.csv",
+    "multi_label_val_path":"./data/CN-filter/MultiLabel/classIII_val.csv",
+    "multi_label_test_path":"./data/CN-filter/MultiLabel/classIII_test.csv",
+    "multi_label_path":"./data/MultiLabel/patent_data_multilabel.csv",
+    "eda_path": "./data/CN-EDA/eda.csv"
+  },
+
+"US-filter": {
+    "raw_path": "./data/raw-data/US-all.csv",
+    "filter_code_path": "./data/New-Data/ustpo-all.csv",
+    "comany_patent_path": "./data/New-Data/us_com_all.csv",
+    "company_top_path": "./data/New-Data/top30/ustpo-30.csv",
+    "key_COM":[
+      "orgname",
+      "publicationDate",
+      "patentId",
+      "classCode"
+    ],
+    "KNN-path": "./data/US-filter/tmp.csv",
+    "hier_path": "./data/US-filter/tmp_hieray.csv",
+    "reIndex_path": "./data/US-filter/tmp-reIndex.csv",
+    "concate_path": "./data/US-filter/tmp-concate.csv",
+    "final_path": "./data/US-filter/all.csv",
+
+    "match_label": [
+      "codeIV",
+      "codeIII",
+      "codeII",
+      "codeI"
+    ],
+    "match_rule": [
+      "[a-hA-H]\\d+[a-zA-Z]-?\\d+",
+      "[a-hA-H]\\d+[a-zA-Z]",
+      "[a-hA-H]\\d+",
+      "[a-hA-H]"
+    ],
+
+    "reid_raw_col": [
+      "orgname",
+      "classCode",
+      "codeIV",
+      "codeIII",
+      "codeII",
+      "codeI"
+    ],
+    "reid_new_col": [
+      "orgID",
+      "codeId",
+      "codeIVId",
+      "codeIIIId",
+      "codeIIId",
+      "codeIId"
+    ],
+    "reid_path": [
+      "./data/US-filter/reInd/com-reInd.csv",
+      "./data/US-filter/reInd/cls-reInd.csv",
+      "./data/US-filter/reInd/clsIV-reInd.csv",
+      "./data/US-filter/reInd/clsIII-reInd.csv",
+      "./data/US-filter/reInd/clsII-reInd.csv",
+      "./data/US-filter/reInd/clsI-reInd.csv"
+    ],
+    "map_out": [
+      "orgID",
+      "group",
+      "class",
+      "subsection",
+      "section"
+    ]
+  },
+
+"new-US": {
+    "description": "Filter the patents based on companies: including patents in 2018, 2019 and 2010-2017",
+    "filter_com_year_path": "./data/US-filter/new-CN/all-com-year.csv",
+    "root_path": "./data/US-filter/all.csv",
+    "filt_root_path": "./data/US-filter/new-US/all.csv",
+    "com_filt_path": "./data/US-filter/new-US/all-com.csv",
+    "concate_path": "./data/US-filter/new-US/com-code-concate.csv",
+    "reidx_path": "./data/US-filter/new-US/all-reidx.csv",
+    "final_path": "./data/US-filter/new-US/all-cn.csv",
+    "train_path": "./data/US-filter/new-US/train-val-test/train.csv",
+    "val_path": "./data/US-filter/new-US/train-val-test/validate.csv",
+    "test_path": "./data/US-filter/new-US/train-val-test/test.csv",
+    "MAX_NUM": 200000,
+    "Id_high": [
+      "codeIII", "codeII", "codeI"
+    ],
+    "Id_low": [
+      "codeIV", "codeIII", "codeII"
+    ],
+    "Id_path": [
+      "./data/US-filter/reInd/clsIV-reInd.csv",
+      "./data/US-filter/reInd/clsIII-reInd.csv",
+      "./data/US-filter/reInd/clsII-reInd.csv",
+      "./data/US-filter/reInd/clsI-reInd.csv"
+    ],
+    "match_rule": [
+      "[a-hA-H]\\d+[a-zA-Z]",
+      "[a-hA-H]\\d+",
+      "[a-hA-H]"
+    ],
+    "hierarchy_tree": [
+      "./data/US-filter/tree/clsIII-IV.csv",
+      "./data/US-filter/tree/clsII-III.csv",
+      "./data/US-filter/tree/clsI-II.csv"
+    ],
+
+    "new_tree": [
+      "./data/US-filter/map/tree/clsIII-IV.csv",
+      "./data/US-filter/map/tree/clsII-III.csv",
+      "./data/US-filter/map/tree/clsI-II.csv"
+    ],
+
+    "keys": [
+      "codeIVId", "codeIIIId", "codeIIId", "codeIId"
+    ],
+
+
+
+    "map_ID": [
+      "./data/US-filter/map/clsIV.csv",
+      "./data/US-filter/map/clsIII.csv",
+      "./data/US-filter/map/clsII.csv",
+      "./data/US-filter/map/clsI.csv"
+    ],
+
+    "map_hierarchy_tree": [
+      "./data/US-filter/map/clsIV-reInd.csv",
+      "./data/US-filter/map/clsIII-reInd.csv",
+      "./data/US-filter/map/clsII-reInd.csv",
+      "./data/US-filter/map/clsI-reInd.csv"
+    ], 
+    "hierarchy_IPC": [
+      "./data/US-filter/map/clsI-reInd.csv",
+      "./data/US-filter/map/clsII-reInd.csv",
+      "./data/US-filter/map/clsIII-reInd.csv"
+    ],
+    "dt_IIId_path": "./data/US-filter/map/clsIII-reInd.csv",
+    "adj_IIId_path": "./data/US-filter/adjacent/clsIII-reInd.npy"
+  },
+
+"new-CN": {
+    "description": "Filter the patents based on companies: including patents in 2018, 2019 and 2010-2017",
+    "root_path": "./data/CN-filter/all.csv",
+    "filter_com_year_path": "./data/CN-filter/new-CN/all-com-year.csv",
+    "filt_root_path": "./data/CN-filter/new-CN/all.csv",
+    "com_filt_path": "./data/CN-filter/new-CN/all-com.csv",
+    "concate_path": "./data/CN-filter/new-CN/com-code-concate.csv",
+    "reidx_path": "./data/CN-filter/new-CN/all-reidx.csv",
+    "final_path": "./data/CN-filter/new-CN/all-cn.csv",
+    "train_path": "./data/CN-filter/new-CN/train-val-test/train.csv",
+    "val_path": "./data/CN-filter/new-CN/train-val-test/validate.csv",
+    "test_path": "./data/CN-filter/new-CN/train-val-test/test.csv",
+    "MAX_NUM": 200000,
+    "Id_high": [
+      "codeIII", "codeII", "codeI"
+    ],
+    "Id_low": [
+      "codeIV", "codeIII", "codeII"
+    ],
+    "Id_path": [
+      "./data/CN-filter/reInd/clsIV-reInd.csv",
+      "./data/CN-filter/reInd/clsIII-reInd.csv",
+      "./data/CN-filter/reInd/clsII-reInd.csv",
+      "./data/CN-filter/reInd/clsI-reInd.csv"
+    ],
+    "match_rule": [
+      "[a-hA-H]\\d+[a-zA-Z]","[a-hA-H]\\d+","[a-hA-H]"
+    ],
+    "hierarchy_tree": [
+      "./data/CN-filter/tree/clsIII-IV.csv",
+      "./data/CN-filter/tree/clsII-III.csv",
+      "./data/CN-filter/tree/clsI-II.csv"
+    ],
+    "new_tree": [
+      "./data/CN-filter/map/tree/clsIII-IV.csv",
+      "./data/CN-filter/map/tree/clsII-III.csv",
+      "./data/CN-filter/map/tree/clsI-II.csv"
+    ],   
+    "keys": [
+      "codeIVId", "codeIIIId", "codeIIId", "codeIId","orgID"
+    ],
+    "map_ID": [
+      "./data/CN-filter/map/clsIV.csv",
+      "./data/CN-filter/map/clsIII.csv",
+      "./data/CN-filter/map/clsII.csv",
+      "./data/CN-filter/map/clsI.csv",
+      "./data/CN-filter/map/com.csv"
+
+    ],
+    "map_hierarchy_tree": [
+      "./data/CN-filter/map/clsIV-reInd.csv",
+      "./data/CN-filter/map/clsIII-reInd.csv",
+      "./data/CN-filter/map/clsII-reInd.csv",
+      "./data/CN-filter/map/clsI-reInd.csv"
+    ],
+    "hierarchy_IPC": [
+      "./data/CN-filter/map/clsI-reInd.csv",
+      "./data/CN-filter/map/clsII-reInd.csv",
+      "./data/CN-filter/map/clsIII-reInd.csv"
+    ],
+ 
+
+    "dt_IIId_path": "./data/CN-filter/map/clsIII-reInd.csv",
+    "adj_IIId_path": "./data/CN-filter/adjacent/clsIII-reInd.npy"
+  }
+
+}

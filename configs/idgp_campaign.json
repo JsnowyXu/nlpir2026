@@ -1,0 +1,797 @@
+{
+  "name": "idgp_campaign_v2",
+  "jobs": [
+    {
+      "id": "IN_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/IN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/IN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_B_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/IN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/IN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/IN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_F_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/IN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/IN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/IN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_C_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/IN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/IN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/IN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "IN_All_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "IN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/IN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/CN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/CN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_B_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/CN_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/CN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/CN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_F_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/CN_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/CN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/CN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_C_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/CN_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/CN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/CN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "CN_All_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/CN_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/US_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/US_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_B_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_B",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/US_B/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/US_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/US_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_F_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_F",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/US_F/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/US_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/US_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_C_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_C",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/US_C/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_IDGP_s42",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/IDGP/v2_default/s42/validation.json",
+      "requires": [
+        "data/idgp/US_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_IDGP_s2026",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/IDGP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/idgp/US_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    },
+    {
+      "id": "US_All_IDGP_s3407",
+      "argv": [
+        "scripts/train_temporal_baseline.py",
+        "--dataset",
+        "US_All",
+        "--method",
+        "IDGP",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/IDGP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/idgp/US_All/manifest.json"
+      ],
+      "minimum_free_mb": 3000
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "CN_All": {
+    "seed": 42,
+    "best_epoch": 24,
+    "validation_active_ndcg20": 0.5680506098967004,
+    "checkpoint": "checkpoints/CN_All/best.pt"
+  },
+  "CN_B": {
+    "seed": 42,
+    "best_epoch": 19,
+    "validation_active_ndcg20": 0.5615573004255394,
+    "checkpoint": "checkpoints/CN_B/best.pt"
+  },
+  "CN_C": {
+    "seed": 42,
+    "best_epoch": 13,
+    "validation_active_ndcg20": 0.6812309173300475,
+    "checkpoint": "checkpoints/CN_C/best.pt"
+  },
+  "CN_F": {
+    "seed": 2026,
+    "best_epoch": 10,
+    "validation_active_ndcg20": 0.574605799141966,
+    "checkpoint": "checkpoints/CN_F/best.pt"
+  },
+  "IN_All": {
+    "seed": 42,
+    "best_epoch": 2,
+    "validation_active_ndcg20": 0.5695123785563926,
+    "checkpoint": "checkpoints/IN_All/best.pt"
+  },
+  "IN_B": {
+    "seed": 42,
+    "best_epoch": 2,
+    "validation_active_ndcg20": 0.49579572851788917,
+    "checkpoint": "checkpoints/IN_B/best.pt"
+  },
+  "IN_C": {
+    "seed": 2026,
+    "best_epoch": 3,
+    "validation_active_ndcg20": 0.6514197785086105,
+    "checkpoint": "checkpoints/IN_C/best.pt"
+  },
+  "IN_F": {
+    "seed": 42,
+    "best_epoch": 2,
+    "validation_active_ndcg20": 0.4382935254140472,
+    "checkpoint": "checkpoints/IN_F/best.pt"
+  },
+  "US_All": {
+    "seed": 3407,
+    "best_epoch": 25,
+    "validation_active_ndcg20": 0.7429341604135906,
+    "checkpoint": "checkpoints/US_All/best.pt"
+  },
+  "US_B": {
+    "seed": 42,
+    "best_epoch": 22,
+    "validation_active_ndcg20": 0.6871611787150566,
+    "checkpoint": "checkpoints/US_B/best.pt"
+  },
+  "US_C": {
+    "seed": 42,
+    "best_epoch": 27,
+    "validation_active_ndcg20": 0.7565515031147687,
+    "checkpoint": "checkpoints/US_C/best.pt"
+  },
+  "US_F": {
+    "seed": 42,
+    "best_epoch": 16,
+    "validation_active_ndcg20": 0.6874524608292862,
+    "checkpoint": "checkpoints/US_F/best.pt"
+  }
+}

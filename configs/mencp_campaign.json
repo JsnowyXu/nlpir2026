@@ -1,0 +1,725 @@
+{
+  "name": "mencp_campaign_v2",
+  "jobs": [
+    {
+      "id": "IN_B_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_B_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_B_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_B/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_F_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_F_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_F_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_F/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_C_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_C_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_C_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_C/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_All_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_All_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "IN_All_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "IN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/IN_All/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/in/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_B_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_B_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_B_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_B/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_F_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_F_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_F_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_F/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_C_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_C_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_C_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_C/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_All_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_All_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "CN_All_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "CN_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/CN_All/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/cn/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_B_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_B_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_B_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_B",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_B/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_F_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_F_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_F_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_F",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_F/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_C_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_C_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_C_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_C",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_C/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_All_MENCP_s42",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/MENCP/v2_default/s42/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_All_MENCP_s2026",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "2026",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/MENCP/v2_default/s2026/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    },
+    {
+      "id": "US_All_MENCP_s3407",
+      "argv": [
+        "scripts/train_mencp.py",
+        "--dataset",
+        "US_All",
+        "--seed",
+        "3407",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume"
+      ],
+      "output": "results/deep/US_All/MENCP/v2_default/s3407/validation.json",
+      "requires": [
+        "data/sequences/us/tokens64_history4/manifest.json"
+      ],
+      "minimum_free_mb": 3500
+    }
+  ]
+}

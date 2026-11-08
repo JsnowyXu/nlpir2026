@@ -1,0 +1,107 @@
+{
+  "name": "test_priority_repeat_cn",
+  "policy": {
+    "seed": 42,
+    "priority": "test",
+    "validation_repeats": false,
+    "note": "Replay existing checkpoints; train missing cells once, then evaluate validation and test."
+  },
+  "jobs": [
+    {
+      "id": "test_CN_C_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_C",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_C/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_CN_F_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_F",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_F/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_CN_B_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_B",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_B/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    },
+    {
+      "id": "test_CN_All_RepeatMixer_s42",
+      "argv": [
+        "scripts/train_sampling_baseline.py",
+        "--dataset",
+        "CN_All",
+        "--method",
+        "RepeatMixer",
+        "--seed",
+        "42",
+        "--tag",
+        "v2_default",
+        "--device",
+        "{device}",
+        "--resume",
+        "--evaluate-test"
+      ],
+      "output": "results/deep/CN_All/RepeatMixer/v2_default/s42/metrics.json",
+      "requires": [
+        "data/text/cn/manifest.json",
+        "results/deep/IN_B/RepeatMixer/pilot_cached_v2/s42/validation.json"
+      ],
+      "minimum_free_mb": 2200
+    }
+  ]
+}
